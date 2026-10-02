@@ -57,7 +57,7 @@ grep -n terum-skills ~/.claude/settings.json
 discarded and named:
 
 1. The asset's SHA-256 matches the `.sha256` file beside it. This catches a damaged download.
-2. `gh attestation verify <asset> --repo ryanliu-terum/terum-skills` succeeds. This checks the
+2. `gh attestation verify <asset> --repo Terum-Inc/terum-skills` succeeds. This checks the
    build-provenance attestation GitHub recorded when the release workflow produced those bytes, so
    an asset replaced on the Release, even together with its checksum, is refused. It needs gh 2.49
    or newer.
@@ -66,7 +66,7 @@ To check a release yourself, for the npm package and for an app asset:
 
 ```sh
 npm audit signatures            # in a project where terum-skills is installed
-gh attestation verify terum-skills-desktop_<version>_<suffix> --repo ryanliu-terum/terum-skills
+gh attestation verify terum-skills-desktop_<version>_<suffix> --repo Terum-Inc/terum-skills
 ```
 
 ## What is not covered yet

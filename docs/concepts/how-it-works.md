@@ -27,7 +27,7 @@ There is no Terum server and no account with Terum. The tool is a CLI that runs 
 | Your team's git host | One `git clone` when you join, then `git fetch` and `git push` against the team repository. Any git remote works for storing and syncing: GitHub, GitLab, Bitbucket, a bare SSH repository. |
 | Anthropic, through your own Claude Code login | Eval runs, the judge, generated eval assets, and the category suggestion at publish. The CLI spawns `claude -p`. It never handles a token, and the work is billed to whoever is logged into Claude Code on that machine. |
 | GitHub's API, through `gh` | Invitations, access-revoking `team remove`, the admin lookup behind `status --permissions`, the invitation your join accepts, and the search for a successor repository when a team's repository has gone. These are GitHub-only; on another host they refuse rather than guess. |
-| `github.com/ryanliu-terum/terum-skills` | A `git ls-remote --tags` release probe, at most once a day, and only when a team on this machine has a GitHub remote. Desktop app downloads come from that repository's releases through `gh release download`. |
+| `github.com/Terum-Inc/terum-skills` | A `git ls-remote --tags` release probe, at most once a day, and only when a team on this machine has a GitHub remote. Desktop app downloads come from that repository's releases through `gh release download`. |
 
 See [privacy and network](privacy-and-network.md) for the full inventory of what is sent and how to avoid each item.
 

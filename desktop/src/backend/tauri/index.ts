@@ -436,7 +436,7 @@ function settingsModel(value:CliStatus, local:CliLocal|null, status:StatusResult
   PLACEMENTS:value.ledger.placements.map(p=>{const row=rows.find(row=>row.path===p.path);const missing=local?.local.some(root=>root.problems.some(problem=>problem.path===p.path))??false;return [abbreviateHome(p.path,home),row?.name??p.id,p.scope.kind==='global'?'Global':p.scope.project,row?.tracked===true?null:placementVersionLabel(p.version),p.placed_at??null,row?PLACEMENT_STATE[row.health]:missing?'folder missing':'—'];}),PLACEMENTS_N:value.ledger.placements.length,
   APPROVALS:value.ledger.approvals.flatMap(approval=>{const skill=local?.skills.find(skill=>skill.id===approval.id&&skill.grantsHash!==null&&skill.grantsHash===approval.grants&&skill.grants!==null);return skill?[[skill.name,skill.grants==='none'?[]:skill.grants!.split('\n'),approval.approved_at]]:[];}),
   QUARANTINE:null,HOOK:null,
-  APP_VERSION:import.meta.env.VITE_APP_VERSION,AGENT_CLI:'—',AGENT_CLI_AUTH:'unknown',COMMUNITY:'github.com/ryanliu-terum/terum-skills/issues',
+  APP_VERSION:import.meta.env.VITE_APP_VERSION,AGENT_CLI:'—',AGENT_CLI_AUTH:'unknown',COMMUNITY:'github.com/Terum-Inc/terum-skills/issues',
   STORAGE:{cache:'—',cache_n:null,evals:'—',evals_n:null,quarantine:'—'},PINNED_N:value.ledger.placements.filter(p=>{const row=rows.find(row=>row.path===p.path);return row?row.tracked===false:p.version!==null;}).length,
   CLI_VERSION:value.version??'—',CLI_LATEST:null,FOLLOWING:[],SHARED_SPECIMEN:null,
   SETTINGS_NAV:[],SHORTCUTS:SHORTCUTS.map(pair=>[...pair]),INBOX_KIND_TEXT:{share:'Shared with you',alert:'Alert',eval:'Eval finished',author:'Your skill',team:'Team'},THEME_OPTIONS:['System','Light','Dark'],

@@ -3,7 +3,7 @@
 **Evaluate and share Claude Code skills across your team. No server.**
 
 [![npm](https://img.shields.io/npm/v/terum-skills)](https://www.npmjs.com/package/terum-skills)
-[![CI](https://github.com/ryanliu-terum/terum-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/ryanliu-terum/terum-skills/actions/workflows/ci.yml)
+[![CI](https://github.com/Terum-Inc/terum-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/Terum-Inc/terum-skills/actions/workflows/ci.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 [![Discord](https://img.shields.io/badge/Discord-join%20us-5865F2?logo=discord&logoColor=white)](https://discord.gg/SVVzejCf9)
 
@@ -43,7 +43,7 @@ I've been searching for best skills and practices for using the amazing AI tools
 
 ## Collaborate with us!
 
-We're interested in collaborators, and just as much in feedback and the things you want us to add. Join our Discord to talk to us: [discord.gg/SVVzejCf9](https://discord.gg/SVVzejCf9)! Bugs and feature requests are also welcome as [GitHub issues](https://github.com/ryanliu-terum/terum-skills/issues), or just email ryanliu@terum.ai directly (I've offered your email as tribute Ryan).
+We're interested in collaborators, and just as much in feedback and the things you want us to add. Join our Discord to talk to us: [discord.gg/SVVzejCf9](https://discord.gg/SVVzejCf9)! Bugs and feature requests are also welcome as [GitHub issues](https://github.com/Terum-Inc/terum-skills/issues), or just email ryanliu@terum.ai directly (I've offered your email as tribute Ryan).
 
 ## What you get
 

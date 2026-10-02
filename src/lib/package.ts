@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { packageRoot } from './package-root.js';
 
 export const PACKAGE_NAME = 'terum-skills';
-export const APPROVED_UPSTREAM = 'https://github.com/ryanliu-terum/terum-skills.git';
+export const APPROVED_UPSTREAM = 'https://github.com/Terum-Inc/terum-skills.git';
 export interface PackageMetadata { name: string | null; version: string | null; repository: string | null; upstreamApproved: boolean; }
 
 /** One adjacent manifest reader for source and shipped dist/lib layouts. Never invent a version. */

@@ -351,7 +351,7 @@ describe.skipIf(!SYMLINKS_SUPPORTED)('the built bin (dist/index.js)', () => {
     const manifest = JSON.parse(await readFile(resolve(root, 'package.json'), 'utf8'));
     const stateRoot = resolve(out, 'notice-home/.terum/skills'); const at = new Date().toISOString();
     await mkdir(resolve(stateRoot, 'run'), { recursive: true });
-    const state = { schema: 1, package: 'terum-skills', upstream: 'https://github.com/ryanliu-terum/terum-skills.git', running: null, registry: null, advertisement: { version: '9.9.9', at, source: 'git-tags' }, attempt: null, ack: null };
+    const state = { schema: 1, package: 'terum-skills', upstream: 'https://github.com/Terum-Inc/terum-skills.git', running: null, registry: null, advertisement: { version: '9.9.9', at, source: 'git-tags' }, attempt: null, ack: null };
     const bootstrap = resolve(out, 'tty.mjs');
     await writeFile(bootstrap, `Object.defineProperty(process.stderr, 'isTTY', { value: true }); process.argv = [process.execPath, ${JSON.stringify(bin)}, 'ls']; await import(${JSON.stringify(pathToFileURL(bin).href)});`);
     for (const gate of ['piped', 'CI', 'NO_UPDATE_NOTIFIER', 'TERUM_SKILLS_NO_UPDATE_NOTIFIER', 'enabled']) {
