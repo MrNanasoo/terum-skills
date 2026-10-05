@@ -182,7 +182,7 @@ if (!embeds.length) {
 
 // One message holds at most 10 embeds and 6000 characters of embed text.
 const fmt = date => date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
-const heading = `**terum-skills changelog** · ${fmt(since)} – ${fmt(new Date())}`;
+const heading = `**${fmt(since)} – ${fmt(new Date())}**`;
 const size = embed => embed.title.length + embed.description.length + (embed.footer?.text.length ?? 0);
 const messages = [];
 for (const embed of embeds) {
