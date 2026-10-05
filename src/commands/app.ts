@@ -24,7 +24,7 @@ import { compare } from '../lib/update.js';
  * stays the same across updates so a Dock pin survives them. `~/.terum/skills/app/<version>/` keeps only the
  * download records, the way Windows keeps them beside the per-user install under %LOCALAPPDATA%.
  */
-export const APP_REPOSITORY = 'ryanliu-terum/terum-skills';
+export const APP_REPOSITORY = 'Terum-Inc/terum-skills';
 export const APP_SLUG = 'terum-skills-desktop';
 export const APP_PRODUCT = 'Terum Skills';
 /** The macOS bundle's fixed home is `<Applications>/Terum Skills.app`; `Applications` defaults to the per-user folder (no admin rights, mirrors the Windows per-user install). */

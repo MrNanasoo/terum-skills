@@ -12,7 +12,8 @@ name: Release
 # the rest. Dry run (default) stops after packaging: it proves gates, the tarball, the environment
 # approval, and permission declarations — NOT the npm or GitHub writes.
 #
-# One-time setup (Ryan): npm Trusted Publisher (ryanliu-terum / terum-skills / release.yml / env npm);
+# One-time setup (Ryan): npm Trusted Publisher (Terum-Inc / terum-skills / release.yml / env npm); the repository moved
+# from ryanliu-terum to the Terum-Inc organization on 2026-10-02, and the publisher had to be re-registered for the new owner.
 # GitHub environment `npm` restricted to main with a required reviewer; branch protection on main.
 # Trusted publishing needs npm >= 11.5.1 on Node >= 22.14 (docs.npmjs.com/trusted-publishers).
 # Since 0.1.6 the desktop app (desktop/) is built in the same run on macOS and Windows runners and attached to

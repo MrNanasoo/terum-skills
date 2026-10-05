@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryanliu-terum/terum-skills.git",
+    "url": "git+https://github.com/Terum-Inc/terum-skills.git",
     "directory": "desktop"
   },
   "type": "module",

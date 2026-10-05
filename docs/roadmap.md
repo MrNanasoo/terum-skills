@@ -117,6 +117,6 @@ Nothing here carries a date, and nothing here is a promise. A status says how se
 
 ## How to influence this
 
-Three ways to reach the maintainers. The Discord is at [discord.gg/SVVzejCf9](https://discord.gg/SVVzejCf9), bugs and feature requests go to [GitHub issues](https://github.com/ryanliu-terum/terum-skills/issues), and ryanliu@terum.ai reaches one of them directly.
+Three ways to reach the maintainers. The Discord is at [discord.gg/SVVzejCf9](https://discord.gg/SVVzejCf9), bugs and feature requests go to [GitHub issues](https://github.com/Terum-Inc/terum-skills/issues), and ryanliu@terum.ai reaches one of them directly.
 
 An item moves on this page when the decision behind it moves, not when someone asks. So the fastest way to change a line here is to bring the case that changes that decision: what you tried, what it cost you, and what you expected instead.

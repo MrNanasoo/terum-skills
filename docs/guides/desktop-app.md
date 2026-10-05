@@ -24,7 +24,7 @@ On macOS and Windows, `setup` runs this before the rest of the wizard. When the 
 | Windows (ARM64) | `terum-skills-desktop_<version>_arm64-setup.exe` | The same |
 | Linux, WSL, anything else | none | Prints one line and exits 0. There is no app |
 
-The download comes from release `v<version>` of `github.com/ryanliu-terum/terum-skills`, where `<version>` is the version of the CLI you ran. Two checks then have to pass before anything is installed: the file's SHA-256 must equal the published `.sha256` beside it, and `gh attestation verify <asset> --repo ryanliu-terum/terum-skills` must confirm the build-provenance attestation GitHub recorded when the release workflow produced those bytes. Either failure discards the download and names which check failed, and the second needs gh 2.49 or newer. The record of the install goes to `~/.terum/skills/app/<version>/installed.json`, and `~/.terum/skills/run/app.json` records the Node binary, the CLI entry and the `PATH` the app must replay.
+The download comes from release `v<version>` of `github.com/Terum-Inc/terum-skills`, where `<version>` is the version of the CLI you ran. Two checks then have to pass before anything is installed: the file's SHA-256 must equal the published `.sha256` beside it, and `gh attestation verify <asset> --repo Terum-Inc/terum-skills` must confirm the build-provenance attestation GitHub recorded when the release workflow produced those bytes. Either failure discards the download and names which check failed, and the second needs gh 2.49 or newer. The record of the install goes to `~/.terum/skills/app/<version>/installed.json`, and `~/.terum/skills/run/app.json` records the Node binary, the CLI entry and the `PATH` the app must replay.
 
 On macOS the bundle always lands on the same path, so a Dock pin survives an update, and the bundle already there is moved aside first and restored if the swap fails.
 
@@ -225,7 +225,7 @@ Sync now runs `sync`. The row states the automatic policy in the app's own words
 
 The Skills group is read-only: tracked installs follow the team, pinned installs stay where they are, and a fetch only tells you a newer version exists. Running `install` again is what places it.
 
-The CLI group has Show update command, which runs `update` and shows the advice it prints. `update` never runs a package manager. Two read-only rows describe the release notice and the release probe: the probe reads release tags from `github.com/ryanliu-terum/terum-skills` at most once a day, and only while a team on this machine lives on GitHub.
+The CLI group has Show update command, which runs `update` and shows the advice it prints. `update` never runs a package manager. Two read-only rows describe the release notice and the release probe: the probe reads release tags from `github.com/Terum-Inc/terum-skills` at most once a day, and only while a team on this machine lives on GitHub.
 
 The app group is the app's own update channel, covered below.
 
@@ -305,7 +305,7 @@ Returning to the window also marks the boards you are looking at as stale. They 
 
 The app updates itself. The CLI never installs a CLI release for you, and this is the one exception.
 
-**Learning about a release.** At launch the app asks the CLI for the state of things with `app-update --check`. The CLI probes the release tags of `github.com/ryanliu-terum/terum-skills` with `git ls-remote --tags`, at most once a day and only while a team on this machine has a GitHub remote. On a machine with no such team the row reads `<version> · release advertisements are not checked on this machine.` Regaining focus repeats the launch check while it has never succeeded, and after an hour re-reads the CLI's answer. Check again and Update and relaunch force a probe now.
+**Learning about a release.** At launch the app asks the CLI for the state of things with `app-update --check`. The CLI probes the release tags of `github.com/Terum-Inc/terum-skills` with `git ls-remote --tags`, at most once a day and only while a team on this machine has a GitHub remote. On a machine with no such team the row reads `<version> · release advertisements are not checked on this machine.` Regaining focus repeats the launch check while it has never succeeded, and after an hour re-reads the CLI's answer. Check again and Update and relaunch force a probe now.
 
 **Staging.** Unless the policy is Ask me, a newer version is downloaded as soon as it is seen: `app-update --stage --release <version>` fetches the asset and its `.sha256` with `gh`, verifies the checksum and the build attestation, unpacks the bundle on macOS, and records it under `~/.terum/skills/app/<version>/`. A version whose download failed or was cancelled is not retried automatically in the same session.
 

@@ -2,14 +2,14 @@
 
 ## Welcome
 
-terum-skills is an Apache-2.0 CLI that lets a team share private Claude Code skills through one private git repository, with no server, plus a desktop app under `desktop/`. Contributions, bug reports and the things you want added are all welcome: join the Discord at [discord.gg/SVVzejCf9](https://discord.gg/SVVzejCf9) to talk to the maintainers, open a [GitHub issue](https://github.com/ryanliu-terum/terum-skills/issues), or email ryanliu@terum.ai directly. A security vulnerability goes to the private channel in [SECURITY.md](SECURITY.md) rather than a public issue.
+terum-skills is an Apache-2.0 CLI that lets a team share private Claude Code skills through one private git repository, with no server, plus a desktop app under `desktop/`. Contributions, bug reports and the things you want added are all welcome: join the Discord at [discord.gg/SVVzejCf9](https://discord.gg/SVVzejCf9) to talk to the maintainers, open a [GitHub issue](https://github.com/Terum-Inc/terum-skills/issues), or email ryanliu@terum.ai directly. A security vulnerability goes to the private channel in [SECURITY.md](SECURITY.md) rather than a public issue.
 
 ## Setting up
 
 The repository is one git checkout with two npm packages in it: the CLI at the root and the desktop app under `desktop/`. They have separate lockfiles, separate gates, and different Node versions.
 
 ```sh
-git clone https://github.com/ryanliu-terum/terum-skills.git
+git clone https://github.com/Terum-Inc/terum-skills.git
 cd terum-skills
 npm ci
 ```

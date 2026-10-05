@@ -4025,7 +4025,7 @@
   },
   "APP_VERSION": "0.1.0 (build 12)",
   "AGENT_CLI": "claude 2.34.0",
-  "COMMUNITY": "github.com/ryanliu-terum/terum-skills/issues",
+  "COMMUNITY": "github.com/Terum-Inc/terum-skills/issues",
   "STORAGE": {
     "cache": "1.1 MB",
     "cache_n": 2,
