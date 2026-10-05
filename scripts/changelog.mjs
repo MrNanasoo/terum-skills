@@ -21,7 +21,7 @@ import { promisify } from 'node:util';
 // execFile with an argument array: no shell, so nothing in a title or body is ever interpreted.
 const run = promisify(execFile);
 const root = fileURLToPath(new URL('..', import.meta.url));
-const REPO = 'ryanliu-terum/terum-skills';
+const REPO = 'Terum-Inc/terum-skills';
 const out = resolve(root, 'CHANGELOG.md');
 const check = process.argv.includes('--check');
 

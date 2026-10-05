@@ -217,7 +217,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "src/lib/package.ts",
     "line": 6,
     "policy": "not-a-hint",
-    "pattern": "export const APPROVED_UPSTREAM = 'https://github.com/ryanliu-terum/terum-skills.git';"
+    "pattern": "export const APPROVED_UPSTREAM = 'https://github.com/Terum-Inc/terum-skills.git';"
   },
   {
     "file": "src/lib/readme.ts",
@@ -427,7 +427,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "src/commands/app.ts",
     "line": 23,
     "policy": "not-a-hint",
-    "pattern": "export const APP_REPOSITORY = 'ryanliu-terum/terum-skills';"
+    "pattern": "export const APP_REPOSITORY = 'Terum-Inc/terum-skills';"
   },
   {
     "file": "src/commands/app.ts",
@@ -1255,7 +1255,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "README.md",
     "line": 6,
     "policy": "prose",
-    "pattern": "[![CI](https://github.com/ryanliu-terum/terum-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/ryanliu-terum/terum-skills/actions/workflows/ci.yml)"
+    "pattern": "[![CI](https://github.com/Terum-Inc/terum-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/Terum-Inc/terum-skills/actions/workflows/ci.yml)"
   },
   {
     "file": "README.md",
@@ -1273,7 +1273,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "README.md",
     "line": 46,
     "policy": "prose",
-    "pattern": "We're interested in collaborators, and just as much in feedback and the things you want us to add. Join our Discord to talk to us: [discord.gg/SVVzejCf9](https://discord.gg/SVVzejCf9)! Bugs and feature requests are also welcome as [GitHub issues](https://github.com/ryanliu-terum/terum-skills/issues), or just email ryanliu@terum.ai directly (I've offered your email as tribute Ryan)."
+    "pattern": "We're interested in collaborators, and just as much in feedback and the things you want us to add. Join our Discord to talk to us: [discord.gg/SVVzejCf9](https://discord.gg/SVVzejCf9)! Bugs and feature requests are also welcome as [GitHub issues](https://github.com/Terum-Inc/terum-skills/issues), or just email ryanliu@terum.ai directly (I've offered your email as tribute Ryan)."
   },
   {
     "file": "README.md",
@@ -1501,7 +1501,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "SECURITY.md",
     "line": 60,
     "policy": "prose",
-    "pattern": "2. `gh attestation verify <asset> --repo ryanliu-terum/terum-skills` succeeds. This checks the"
+    "pattern": "2. `gh attestation verify <asset> --repo Terum-Inc/terum-skills` succeeds. This checks the"
   },
   {
     "file": "SECURITY.md",
@@ -1513,7 +1513,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "SECURITY.md",
     "line": 69,
     "policy": "prose",
-    "pattern": "gh attestation verify terum-skills-desktop_<version>_<suffix> --repo ryanliu-terum/terum-skills"
+    "pattern": "gh attestation verify terum-skills-desktop_<version>_<suffix> --repo Terum-Inc/terum-skills"
   },
   {
     "file": "SECURITY.md",
@@ -1585,7 +1585,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "docs/concepts/how-it-works.md",
     "line": 30,
     "policy": "prose",
-    "pattern": "| `github.com/ryanliu-terum/terum-skills` | A `git ls-remote --tags` release probe, at most once a day, and only when a team on this machine has a GitHub remote. Desktop app downloads come from that repository's releases through `gh release download`. |"
+    "pattern": "| `github.com/Terum-Inc/terum-skills` | A `git ls-remote --tags` release probe, at most once a day, and only when a team on this machine has a GitHub remote. Desktop app downloads come from that repository's releases through `gh release download`. |"
   },
   {
     "file": "docs/concepts/how-it-works.md",
@@ -1843,13 +1843,13 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "docs/concepts/privacy-and-network.md",
     "line": 28,
     "policy": "prose",
-    "pattern": "| `update`, and `app-update` (which the app runs at launch and on window focus) | `github.com/ryanliu-terum/terum-skills` | `git ls-remote --tags` against the public release repository, at most once a day. It asks for the tag list and nothing else: it sends no version of yours, no identity and no query. Git supplies whatever it would normally send to github.com, your credential helper included. It runs only when a team on this machine has a GitHub remote. | Use a non-GitHub team remote, and the probe never runs. Otherwise it is one tag listing per day. |"
+    "pattern": "| `update`, and `app-update` (which the app runs at launch and on window focus) | `github.com/Terum-Inc/terum-skills` | `git ls-remote --tags` against the public release repository, at most once a day. It asks for the tag list and nothing else: it sends no version of yours, no identity and no query. Git supplies whatever it would normally send to github.com, your credential helper included. It runs only when a team on this machine has a GitHub remote. | Use a non-GitHub team remote, and the probe never runs. Otherwise it is one tag listing per day. |"
   },
   {
     "file": "docs/concepts/privacy-and-network.md",
     "line": 29,
     "policy": "prose",
-    "pattern": "| `app`, and applying an app update | `github.com/ryanliu-terum/terum-skills` | `gh release download v<version>` for the platform asset and its checksum, then `gh attestation verify <asset> --repo ryanliu-terum/terum-skills`, which asks GitHub for the build-provenance attestation recorded for exactly those bytes. Both run under your gh credentials. The download sends the release tag and the asset name; the verify step sends this repository slug and the SHA-256 of the bytes already on your disk, and nothing about you or your team. | Do not install the desktop app. The CLI is complete without it, and there is no Linux app to download in any case. |"
+    "pattern": "| `app`, and applying an app update | `github.com/Terum-Inc/terum-skills` | `gh release download v<version>` for the platform asset and its checksum, then `gh attestation verify <asset> --repo Terum-Inc/terum-skills`, which asks GitHub for the build-provenance attestation recorded for exactly those bytes. Both run under your gh credentials. The download sends the release tag and the asset name; the verify step sends this repository slug and the SHA-256 of the bytes already on your disk, and nothing about you or your team. | Do not install the desktop app. The CLI is complete without it, and there is no Linux app to download in any case. |"
   },
   {
     "file": "docs/concepts/privacy-and-network.md",
@@ -1945,7 +1945,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "docs/contributing/release.md",
     "line": 38,
     "policy": "prose",
-    "pattern": "Dispatch with `dry_run=true` first. A dry run runs `validate`, `build`, `desktop` and `audit`, so it proves the gates, the tarball and the desktop matrix, and it performs neither the npm write nor the GitHub write. It does not exercise the `npm` environment approval: `publish` is the job that declares that environment, and a dry run skips it (`release.yml:296-298`). Then re-dispatch with the same `expected_version` and `expected_sha` and `dry_run=false`."
+    "pattern": "Dispatch with `dry_run=false` directly unless `.github/workflows/release.yml` changed since the last release. A real run already stops before anything is written when `validate`, `build` or `desktop` fails, because `publish` needs all three, so for a routine version bump a dry run only repeats that work. `git diff --stat v<previous version> origin/main -- .github/workflows/release.yml` prints nothing when the workflow is unchanged. When `release.yml` did change, dispatch with `dry_run=true` first: a dry run runs `validate`, `build`, `desktop` and `audit`, which proves the gates, the tarball and the desktop matrix, and it performs neither the npm write nor the GitHub write. It does not exercise the `npm` environment approval: `publish` is the job that declares that environment, and a dry run skips it (`release.yml:296-298`). Once it passes, re-dispatch with the same `expected_version` and `expected_sha` and `dry_run=false`."
   },
   {
     "file": "docs/contributing/release.md",
@@ -4057,7 +4057,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "docs/guides/desktop-app.md",
     "line": 27,
     "policy": "prose",
-    "pattern": "The download comes from release `v<version>` of `github.com/ryanliu-terum/terum-skills`, where `<version>` is the version of the CLI you ran. Two checks then have to pass before anything is installed: the file's SHA-256 must equal the published `.sha256` beside it, and `gh attestation verify <asset> --repo ryanliu-terum/terum-skills` must confirm the build-provenance attestation GitHub recorded when the release workflow produced those bytes. Either failure discards the download and names which check failed, and the second needs gh 2.49 or newer. The record of the install goes to `~/.terum/skills/app/<version>/installed.json`, and `~/.terum/skills/run/app.json` records the Node binary, the CLI entry and the `PATH` the app must replay."
+    "pattern": "The download comes from release `v<version>` of `github.com/Terum-Inc/terum-skills`, where `<version>` is the version of the CLI you ran. Two checks then have to pass before anything is installed: the file's SHA-256 must equal the published `.sha256` beside it, and `gh attestation verify <asset> --repo Terum-Inc/terum-skills` must confirm the build-provenance attestation GitHub recorded when the release workflow produced those bytes. Either failure discards the download and names which check failed, and the second needs gh 2.49 or newer. The record of the install goes to `~/.terum/skills/app/<version>/installed.json`, and `~/.terum/skills/run/app.json` records the Node binary, the CLI entry and the `PATH` the app must replay."
   },
   {
     "file": "docs/guides/desktop-app.md",
@@ -4345,7 +4345,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "docs/guides/desktop-app.md",
     "line": 228,
     "policy": "prose",
-    "pattern": "The CLI group has Show update command, which runs `update` and shows the advice it prints. `update` never runs a package manager. Two read-only rows describe the release notice and the release probe: the probe reads release tags from `github.com/ryanliu-terum/terum-skills` at most once a day, and only while a team on this machine lives on GitHub."
+    "pattern": "The CLI group has Show update command, which runs `update` and shows the advice it prints. `update` never runs a package manager. Two read-only rows describe the release notice and the release probe: the probe reads release tags from `github.com/Terum-Inc/terum-skills` at most once a day, and only while a team on this machine lives on GitHub."
   },
   {
     "file": "docs/guides/desktop-app.md",
@@ -4369,7 +4369,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "docs/guides/desktop-app.md",
     "line": 308,
     "policy": "prose",
-    "pattern": "**Learning about a release.** At launch the app asks the CLI for the state of things with `app-update --check`. The CLI probes the release tags of `github.com/ryanliu-terum/terum-skills` with `git ls-remote --tags`, at most once a day and only while a team on this machine has a GitHub remote. On a machine with no such team the row reads `<version> · release advertisements are not checked on this machine.` Regaining focus repeats the launch check while it has never succeeded, and after an hour re-reads the CLI's answer. Check again and Update and relaunch force a probe now."
+    "pattern": "**Learning about a release.** At launch the app asks the CLI for the state of things with `app-update --check`. The CLI probes the release tags of `github.com/Terum-Inc/terum-skills` with `git ls-remote --tags`, at most once a day and only while a team on this machine has a GitHub remote. On a machine with no such team the row reads `<version> · release advertisements are not checked on this machine.` Regaining focus repeats the launch check while it has never succeeded, and after an hour re-reads the CLI's answer. Check again and Update and relaunch force a probe now."
   },
   {
     "file": "docs/guides/desktop-app.md",
@@ -6163,7 +6163,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "docs/reference/cli.md",
     "line": 1079,
     "policy": "prose",
-    "pattern": "What it does: installs and opens the desktop app for this CLI version, and records where this CLI is so the app can drive it. It downloads `terum-skills-desktop_<version>_<suffix>` from the GitHub release `v<version>` of `ryanliu-terum/terum-skills` through `gh release download`, with a ten-minute deadline, and then checks it twice: the published SHA-256 beside it, and the asset's build provenance with `gh attestation verify <file> --repo ryanliu-terum/terum-skills`, under a two-minute deadline. Both are required, because the checksum ships in the same release as the asset and so cannot catch an asset swapped together with its checksum. Bytes the release workflow did not produce in that repository are discarded rather than installed. On macOS it unpacks the archive and places the bundle at `~/Applications/Terum Skills.app`, a fixed path so a Dock pin survives updates; the previous bundle is renamed aside first and restored if the swap fails. On Windows the asset is a per-user NSIS installer run with `/S`, which installs under `%LOCALAPPDATA%\\Terum Skills` with no elevation. It then writes `~/.terum/skills/run/app.json` with the Node binary, this CLI's entry point, `PATH` and version, sets `config.app` to opted-in, and opens the app. On macOS it never downgrades: a bundle already at that path at this version or newer is kept."
+    "pattern": "What it does: installs and opens the desktop app for this CLI version, and records where this CLI is so the app can drive it. It downloads `terum-skills-desktop_<version>_<suffix>` from the GitHub release `v<version>` of `Terum-Inc/terum-skills` through `gh release download`, with a ten-minute deadline, and then checks it twice: the published SHA-256 beside it, and the asset's build provenance with `gh attestation verify <file> --repo Terum-Inc/terum-skills`, under a two-minute deadline. Both are required, because the checksum ships in the same release as the asset and so cannot catch an asset swapped together with its checksum. Bytes the release workflow did not produce in that repository are discarded rather than installed. On macOS it unpacks the archive and places the bundle at `~/Applications/Terum Skills.app`, a fixed path so a Dock pin survives updates; the previous bundle is renamed aside first and restored if the swap fails. On Windows the asset is a per-user NSIS installer run with `/S`, which installs under `%LOCALAPPDATA%\\Terum Skills` with no elevation. It then writes `~/.terum/skills/run/app.json` with the Node binary, this CLI's entry point, `PATH` and version, sets `config.app` to opted-in, and opens the app. On macOS it never downgrades: a bundle already at that path at this version or newer is kept."
   },
   {
     "file": "docs/reference/cli.md",
@@ -6175,7 +6175,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "docs/reference/cli.md",
     "line": 1087,
     "policy": "prose",
-    "pattern": "Fails when: `gh` is missing or logged out; the release has no matching asset; the machine is offline or behind a proxy that blocks github.com; the download exceeds ten minutes; the checksum does not match (`The downloaded desktop app did not match its published checksum, so it was discarded (expected <a>, got <b>).`); the asset has no valid build attestation (`The downloaded desktop app has no valid build attestation from ryanliu-terum/terum-skills, so it was discarded: <detail>.`), which is also what a release built before desktop assets were attested looks like; `gh` is too old to check one (`This copy of gh cannot verify build attestations (gh 2.49 or newer is needed), so the downloaded desktop app was discarded.`); the archive cannot be unpacked (`Could not unpack the desktop app: …`) or holds no application bundle; the installer exits non-zero; the executable is not where it should be afterwards; the app cannot be opened (`Could not open Terum Skills: …`). Each of those ends with `` Everything works from the terminal. Run `app` later to try again. `` One failure does not: a copy of the CLI with no readable version stops at `This copy of terum-skills has no version; the desktop app is published per version.`"
+    "pattern": "Fails when: `gh` is missing or logged out; the release has no matching asset; the machine is offline or behind a proxy that blocks github.com; the download exceeds ten minutes; the checksum does not match (`The downloaded desktop app did not match its published checksum, so it was discarded (expected <a>, got <b>).`); the asset has no valid build attestation (`The downloaded desktop app has no valid build attestation from Terum-Inc/terum-skills, so it was discarded: <detail>.`), which is also what a release built before desktop assets were attested looks like; `gh` is too old to check one (`This copy of gh cannot verify build attestations (gh 2.49 or newer is needed), so the downloaded desktop app was discarded.`); the archive cannot be unpacked (`Could not unpack the desktop app: …`) or holds no application bundle; the installer exits non-zero; the executable is not where it should be afterwards; the app cannot be opened (`Could not open Terum Skills: …`). Each of those ends with `` Everything works from the terminal. Run `app` later to try again. `` One failure does not: a copy of the CLI with no readable version stops at `This copy of terum-skills has no version; the desktop app is published per version.`"
   },
   {
     "file": "docs/reference/cli.md",
@@ -6721,7 +6721,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "docs/reference/platforms.md",
     "line": 40,
     "policy": "prose",
-    "pattern": "2. `gh attestation verify <asset> --repo ryanliu-terum/terum-skills` exits 0. A failure reads `The downloaded desktop app has no valid build attestation from ryanliu-terum/terum-skills, so it was discarded: <what gh reported>.`, and a `gh` too old to know the sub-command reads `This copy of gh cannot verify build attestations (gh 2.49 or newer is needed), so the downloaded desktop app was discarded.`"
+    "pattern": "2. `gh attestation verify <asset> --repo Terum-Inc/terum-skills` exits 0. A failure reads `The downloaded desktop app has no valid build attestation from Terum-Inc/terum-skills, so it was discarded: <what gh reported>.`, and a `gh` too old to know the sub-command reads `This copy of gh cannot verify build attestations (gh 2.49 or newer is needed), so the downloaded desktop app was discarded.`"
   },
   {
     "file": "docs/reference/platforms.md",
@@ -6739,7 +6739,7 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "docs/reference/platforms.md",
     "line": 52,
     "policy": "prose",
-    "pattern": "That downloads the archive for this CLI's own version from the `ryanliu-terum/terum-skills` releases through `gh`, verifies its checksum and its build attestation, unpacks it, and moves the bundle onto `~/Applications/Terum Skills.app`. The path is fixed on purpose: it is visible, Spotlight indexes it, and it stays the same across updates, so a Dock pin survives them. The bundle already there is renamed aside first and removed last, so a failure halfway through puts the old one back rather than leaving you with no app. Then the CLI runs `open` on it."
+    "pattern": "That downloads the archive for this CLI's own version from the `Terum-Inc/terum-skills` releases through `gh`, verifies its checksum and its build attestation, unpacks it, and moves the bundle onto `~/Applications/Terum Skills.app`. The path is fixed on purpose: it is visible, Spotlight indexes it, and it stays the same across updates, so a Dock pin survives them. The bundle already there is renamed aside first and removed last, so a failure halfway through puts the old one back rather than leaving you with no app. Then the CLI runs `open` on it."
   },
   {
     "file": "docs/reference/platforms.md",
@@ -7381,6 +7381,6 @@ export const invocationLiteralCatalog: readonly { file: string; line: number; po
     "file": "docs/roadmap.md",
     "line": 120,
     "policy": "prose",
-    "pattern": "Three ways to reach the maintainers. The Discord is at [discord.gg/SVVzejCf9](https://discord.gg/SVVzejCf9), bugs and feature requests go to [GitHub issues](https://github.com/ryanliu-terum/terum-skills/issues), and ryanliu@terum.ai reaches one of them directly."
+    "pattern": "Three ways to reach the maintainers. The Discord is at [discord.gg/SVVzejCf9](https://discord.gg/SVVzejCf9), bugs and feature requests go to [GitHub issues](https://github.com/Terum-Inc/terum-skills/issues), and ryanliu@terum.ai reaches one of them directly."
   }
 ];

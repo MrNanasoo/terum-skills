@@ -4,5 +4,5 @@ contact_links:
     url: https://discord.gg/SVVzejCf9
     about: Questions, feedback, and talking to the maintainers directly.
   - name: Security
-    url: https://github.com/ryanliu-terum/terum-skills/blob/main/SECURITY.md
+    url: https://github.com/Terum-Inc/terum-skills/blob/main/SECURITY.md
     about: Report a vulnerability privately, and read what the CLI runs on your machine.
